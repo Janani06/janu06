@@ -1,0 +1,11 @@
+use janani
+SELECT * FROM customer;
+SELECT customer_fname from customer WHERE customer_address NOT LIKE 'an%';
+SELECT customer_fname from customer WHERE customer_address LIKE '0u_n';
+SELECT * FROM customer WHERE customer_fname IN('vyshu','soniya''brinda');
+SELECT * FROM customer WHERE customer_id BETWEEN 111 and 115;
+use janani;
+create table proj(p_id int,p_name varchar(200));
+create table dprt(dprt_id  int primary key,dprt_name varchar(100));
+create table emp( emp_id int primary key,emp_name varchar(100),emp_designation varchar(100),emp_doj date,emp_dob date,emp_age int,dprt_id int,foreign key(dprt_id) references dprt(dprt_id));
+describe emp
