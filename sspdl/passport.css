@@ -1,0 +1,9 @@
+table th,td
+		{
+			border:hidden;
+			border-collapse: collapse; 
+		}
+		th,td
+		{
+			padding:15px;
+		}

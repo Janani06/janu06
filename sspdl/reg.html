@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<h1><center><font color="blue"> ONLINE REGISTERATION FORM</font></center></h1>
+	<style>
+		body{
+			background-color: #99ccff;
+		}
+		table th,td
+		{
+			border:hidden;
+			border-collapse: collapse; 
+		}
+		th,td
+		{
+			padding:15px;
+		}
+	</style>
+	</head>
+	<body>
+	<table align="center">
+		<tr>
+  			<th>NAME</th>
+  			<td><input type="text" name="firstname" required></td></tr>
+ 		<tr>
+ 		<tr>
+ 			<th>PASSWORD</th>
+ 			<td><input type="password" name="pwd" maxlength="8" required></td>
+ 		</tr>
+ 		<tr>
+  			<th>ADDRESS</th>
+  			<td><textarea row="10" cols="20"></textarea></td>
+		</tr>
+		<tr>
+  			<th>GENDER</th>
+  			<td><input type="radio" name="gender" value="male"> Male
+  			<input type="radio" name="gender" value="female"> Female</td>
+		</tr>
+<tr>
+	<th>COUNTRY</th>
+	<td><select>
+	<option value="select">select</option>
+  	<option value="vehicle">India</option>
+  	<option value="home">America</option>
+  	<option value="personal">China</option>
+  	<option value="business">Australia</option>
+</select></td>
+</tr>
+<tr>
+	<th>LANGUAGES KNOWN</th><br>
+	<td>
+		<input type="checkbox" name="lang1" value="English">English<br>
+  		<input type="checkbox" name="lang2" value="Tamil">Tamil<br>
+  		<input type="checkbox" name="lang3" value="Hindi">Hindi<br><br></td>
+  </tr>
+</table>
+ <center><input type="submit" value="register" onclick="myFunction()">
+ 	<input type="reset" value="reset">
+ 	<script>
+ 	function myFunction()
+ 	{
+ 		alert("This form is Submitted Successfully");
+ 	}
+ </script>
+ </center>
+</form>
+</body>
+</html>
